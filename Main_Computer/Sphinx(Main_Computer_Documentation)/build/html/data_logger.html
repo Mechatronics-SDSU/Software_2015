@@ -1,0 +1,258 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>data_logger &mdash; SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation" href="index.html" />
+    <link rel="next" title="dvl_ahrs_dummy" href="dvl_ahrs_dummy.html" />
+    <link rel="prev" title="blinky" href="blinky.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dvl_ahrs_dummy.html" title="dvl_ahrs_dummy"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="blinky.html" title="blinky"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="data-logger">
+<h1>data_logger<a class="headerlink" href="#data-logger" title="Permalink to this headline">¶</a></h1>
+<p>Copyright 2014, Austin Owens, All rights reserved.</p>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">Lawrence Erb</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">Created on February 23, 2014</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Description:</th><td class="field-body">This module will log all the data from the sub and output it into a CSV file.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="writer">
+<h2>Writer<a class="headerlink" href="#writer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="data_logger.Writer">
+<em class="property">class </em><tt class="descclassname">data_logger.</tt><tt class="descname">Writer</tt><big>(</big><em>f</em>, <em>dialect=&lt;class csv.excel at 0x03476148&gt;</em>, <em>encoding='utf-8'</em>, <em>**kwds</em><big>)</big><a class="headerlink" href="#data_logger.Writer" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class is what writes the rows and columns and outputs to a CSV file &#8220;f&#8221;</p>
+<dl class="method">
+<dt id="data_logger.Writer.__init__">
+<tt class="descname">__init__</tt><big>(</big><em>f</em>, <em>dialect=&lt;class csv.excel at 0x03476148&gt;</em>, <em>encoding='utf-8'</em>, <em>**kwds</em><big>)</big><a class="headerlink" href="#data_logger.Writer.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initiates the parameters for the CSV Writer.</p>
+<p><a href="#id1"><span class="problematic" id="id2">**</span></a>Parameters&#8221;&#8221;:</p>
+<ul class="simple">
+<li><strong>f</strong> - The CSV file.</li>
+<li><strong>dialect=csv.excel</strong> - Specifies Excel formatting for the output CSV File.</li>
+<li><strong>encoding=&#8221;utf-8&#8221;</strong> - Converts data/unicode-characters using one to four 8-bit bytes.</li>
+<li><strong>**kwds</strong> - Keyword arguments in a dictionary. Allows the function to accept an arbitrary number of arguments and/or keyword arguments.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="data_logger.Writer.writerow">
+<tt class="descname">writerow</tt><big>(</big><em>row</em><big>)</big><a class="headerlink" href="#data_logger.Writer.writerow" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a row to a CSV file.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>row</strong> - Data as sequence of strings or numbers.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="data_logger.Writer.writerows">
+<tt class="descname">writerows</tt><big>(</big><em>rows</em><big>)</big><a class="headerlink" href="#data_logger.Writer.writerows" title="Permalink to this definition">¶</a></dt>
+<dd><p>Takes a list of rows and calls writerow on each row in the list.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>rows</strong> - Multiple lists of data as sequences of strings or numbers.</li>
+</ul>
+<p><strong>Returns</strong> :</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="datalog">
+<h2>DataLog<a class="headerlink" href="#datalog" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="data_logger.DataLog">
+<em class="property">class </em><tt class="descclassname">data_logger.</tt><tt class="descname">DataLog</tt><a class="headerlink" href="#data_logger.DataLog" title="Permalink to this definition">¶</a></dt>
+<dd><p>This class logs all the subs data into a csv file to be used for later external processing.</p>
+<dl class="method">
+<dt id="data_logger.DataLog.__init__">
+<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#data_logger.DataLog.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initiates parameters and formats/writes data for logging.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>iterationsUntilLogging</strong> - The amount of occurrences you want to pass by until you log information into the file</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="data_logger.DataLog.changeFile">
+<tt class="descname">changeFile</tt><big>(</big><big>)</big><a class="headerlink" href="#data_logger.DataLog.changeFile" title="Permalink to this definition">¶</a></dt>
+<dd><p>Allows ability to change output CSV file for data logging.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>No Input Parameters.</strong></li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="data_logger.DataLog.logData">
+<tt class="descname">logData</tt><big>(</big><em>name</em>, <em>*value</em><big>)</big><a class="headerlink" href="#data_logger.DataLog.logData" title="Permalink to this definition">¶</a></dt>
+<dd><p>Writes a line of data to a CSV file.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>name</strong> - Specified names for data that is logged.</li>
+<li><strong>*value</strong> - List of data from the sub.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="data_logger.DataLog.timeStamp">
+<tt class="descname">timeStamp</tt><big>(</big><em>format='log'</em><big>)</big><a class="headerlink" href="#data_logger.DataLog.timeStamp" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generates a timestamp string and returns it.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>format=&#8217;log&#8217;</strong> - Specified formatting for the time on the log file.</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>st</strong> - Timestamp string.</li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">data_logger</a><ul>
+<li><a class="reference internal" href="#writer">Writer</a></li>
+<li><a class="reference internal" href="#datalog">DataLog</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="blinky.html"
+                        title="previous chapter">blinky</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="dvl_ahrs_dummy.html"
+                        title="next chapter">dvl_ahrs_dummy</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/data_logger.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="dvl_ahrs_dummy.html" title="dvl_ahrs_dummy"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="blinky.html" title="blinky"
+             >previous</a> |</li>
+        <li><a href="index.html">SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Austin Owens.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

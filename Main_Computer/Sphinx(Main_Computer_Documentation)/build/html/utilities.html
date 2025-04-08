@@ -1,0 +1,231 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>utilities &mdash; SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    './',
+        VERSION:     '2.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation" href="index.html" />
+    <link rel="next" title="waypoint_plot" href="waypoint_plot.html" />
+    <link rel="prev" title="dvl_test" href="dvl_test.html" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="waypoint_plot.html" title="waypoint_plot"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="dvl_test.html" title="dvl_test"
+             accesskey="P">previous</a> |</li>
+        <li><a href="index.html">SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="utilities">
+<h1>utilities<a class="headerlink" href="#utilities" title="Permalink to this headline">¶</a></h1>
+<p>Copyright 2013, Austin Owens, All rights reserved.</p>
+<span class="target" id="module-utilities"></span><table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">Author:</th><td class="field-body">Austin Owens &lt;<a class="reference external" href="mailto:sdsumechatronics&#37;&#52;&#48;gmail&#46;com">sdsumechatronics<span>&#64;</span>gmail<span>&#46;</span>com</a>&gt;</td>
+</tr>
+<tr class="field-even field"><th class="field-name">Date:</th><td class="field-body">Created on Oct 21, 2013</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">Description:</th><td class="field-body">This module is a combination of useful utilities used throughout the API.</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="timer">
+<h2>Timer<a class="headerlink" href="#timer" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="utilities.Timer">
+<em class="property">class </em><tt class="descclassname">utilities.</tt><tt class="descname">Timer</tt><a class="headerlink" href="#utilities.Timer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Provides useful timer information.</p>
+<dl class="method">
+<dt id="utilities.Timer.__init__">
+<tt class="descname">__init__</tt><big>(</big><big>)</big><a class="headerlink" href="#utilities.Timer.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Initializing timer variables.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>No Input Parameters.</strong></li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="utilities.Timer.cpuClockTime">
+<tt class="descname">cpuClockTime</tt><big>(</big><big>)</big><a class="headerlink" href="#utilities.Timer.cpuClockTime" title="Permalink to this definition">¶</a></dt>
+<dd><p>The CPU clock time in year-month-day hour:minute:second format.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>No Input Parameters.</strong></li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>cpuClock</strong> - The CPU clock time in year-month-day hour:minute:second format.</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="utilities.Timer.cpuClockTimeInSeconds">
+<tt class="descname">cpuClockTimeInSeconds</tt><big>(</big><big>)</big><a class="headerlink" href="#utilities.Timer.cpuClockTimeInSeconds" title="Permalink to this definition">¶</a></dt>
+<dd><p>The CPU clock time in seconds.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>No Input Parameters.</strong></li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>cpuClockInSeconds</strong> - The CPU clock time in seconds.</li>
+</ul>
+</dd></dl>
+
+<dl class="method">
+<dt id="utilities.Timer.netTimer">
+<tt class="descname">netTimer</tt><big>(</big><em>cpuClockInSeconds</em><big>)</big><a class="headerlink" href="#utilities.Timer.netTimer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Starts a timer on 0 that is based on the system clock.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>cpuClockInSeconds</strong> - The system clock in seconds</li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul>
+<li><dl class="first docutils">
+<dt><a href="#id1"><span class="problematic" id="id2">**</span></a>self.netTime*ime = cpuClockInSeconds</dt>
+<dd><p class="first last">self.resetFlag = False</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>self.netTime = cpu* - The time in seconds from when the <em>netTimer</em> function was called.</p>
+</dd></dl>
+
+<dl class="method">
+<dt id="utilities.Timer.restartTimer">
+<tt class="descname">restartTimer</tt><big>(</big><big>)</big><a class="headerlink" href="#utilities.Timer.restartTimer" title="Permalink to this definition">¶</a></dt>
+<dd><p>Restarts the <em>netTimer</em> function to 0.</p>
+<p><strong>Parameters</strong>:</p>
+<ul class="simple">
+<li><strong>No Input Parameters.</strong></li>
+</ul>
+<p><strong>Returns</strong>:</p>
+<ul class="simple">
+<li><strong>No Return.</strong></li>
+</ul>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="advancedmath">
+<h2>AdvancedMath<a class="headerlink" href="#advancedmath" title="Permalink to this headline">¶</a></h2>
+<dl class="class">
+<dt id="utilities.AdvancedMath">
+<em class="property">class </em><tt class="descclassname">utilities.</tt><tt class="descname">AdvancedMath</tt><a class="headerlink" href="#utilities.AdvancedMath" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table Of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">utilities</a><ul>
+<li><a class="reference internal" href="#timer">Timer</a></li>
+<li><a class="reference internal" href="#advancedmath">AdvancedMath</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="dvl_test.html"
+                        title="previous chapter">dvl_test</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="waypoint_plot.html"
+                        title="next chapter">waypoint_plot</a></p>
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/utilities.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Quick search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    <p class="searchtip" style="font-size: 90%">
+    Enter search terms or a module, class or function name.
+    </p>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="py-modindex.html" title="Python Module Index"
+             >modules</a> |</li>
+        <li class="right" >
+          <a href="waypoint_plot.html" title="waypoint_plot"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="dvl_test.html" title="dvl_test"
+             >previous</a> |</li>
+        <li><a href="index.html">SDSU Mechatronics Club: RoboSub 2015 Software Engineering 2.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Austin Owens.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.1.
+    </div>
+  </body>
+</html>

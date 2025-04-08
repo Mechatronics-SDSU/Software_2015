@@ -1,0 +1,67 @@
+\hypertarget{_t_c_b_8_x_2src_2system_8h}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.X/src/system.h File Reference}
+\label{_t_c_b_8_x_2src_2system_8h}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/system.\+h@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/system.\+h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}circular\+Buffer.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_t_c_b_8_x_2src_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}{S\+Y\+S\+\_\+\+F\+R\+E\+Q}~32000000\+L
+\begin{DoxyCompactList}\small\item\em System level defines, variables, and hardware setup. \end{DoxyCompactList}\item 
+\#define \hyperlink{_t_c_b_8_x_2src_2system_8h_a99d7c812ba23bfdba5d29ec2fddf1e83}{F\+C\+Y}~\hyperlink{_w_c_b_8_x_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}{S\+Y\+S\+\_\+\+F\+R\+E\+Q}/2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_t_c_b_8_x_2src_2system_8h_aa8e656e1a832e2242eed137d19c899f0}{Initialize\+Hardware} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_acbd4acd0d29e2d6c43104827f77d9cd2}{uint32} \hyperlink{_t_c_b_8_x_2src_2system_8h_ae7a9f85f08c98c1537e1bbbf0fa84942}{ms\+Ticks}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$ \hyperlink{_t_c_b_8_x_2src_2system_8h_af6977ed8228d1641cbcd00a1d2dafbd1}{Receive\+Buffer}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$ \hyperlink{_t_c_b_8_x_2src_2system_8h_a7b3147b42f558b813a7dbcc907978a10}{Transmit\+Buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_t_c_b_8_x_2src_2system_8h_a99d7c812ba23bfdba5d29ec2fddf1e83}{}\index{T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}!F\+C\+Y@{F\+C\+Y}}
+\index{F\+C\+Y@{F\+C\+Y}!T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}}
+\subsubsection[{F\+C\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+C\+Y~{\bf S\+Y\+S\+\_\+\+F\+R\+E\+Q}/2}\label{_t_c_b_8_x_2src_2system_8h_a99d7c812ba23bfdba5d29ec2fddf1e83}
+\hypertarget{_t_c_b_8_x_2src_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}{}\index{T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}!S\+Y\+S\+\_\+\+F\+R\+E\+Q@{S\+Y\+S\+\_\+\+F\+R\+E\+Q}}
+\index{S\+Y\+S\+\_\+\+F\+R\+E\+Q@{S\+Y\+S\+\_\+\+F\+R\+E\+Q}!T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}}
+\subsubsection[{S\+Y\+S\+\_\+\+F\+R\+E\+Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+\_\+\+F\+R\+E\+Q~32000000\+L}\label{_t_c_b_8_x_2src_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}
+
+
+System level defines, variables, and hardware setup. 
+
+\begin{DoxyAuthor}{Author}
+Mechatronics Robo\+Sub Team 2015 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{_t_c_b_8_x_2src_2system_8h_aa8e656e1a832e2242eed137d19c899f0}{}\index{T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}!Initialize\+Hardware@{Initialize\+Hardware}}
+\index{Initialize\+Hardware@{Initialize\+Hardware}!T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}}
+\subsubsection[{Initialize\+Hardware(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Initialize\+Hardware (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2system_8h_aa8e656e1a832e2242eed137d19c899f0}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_t_c_b_8_x_2src_2system_8h_ae7a9f85f08c98c1537e1bbbf0fa84942}{}\index{T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}!ms\+Ticks@{ms\+Ticks}}
+\index{ms\+Ticks@{ms\+Ticks}!T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}}
+\subsubsection[{ms\+Ticks}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint32} ms\+Ticks}\label{_t_c_b_8_x_2src_2system_8h_ae7a9f85f08c98c1537e1bbbf0fa84942}
+\begin{DoxyAuthor}{Author}
+Mechatronics Robo\+Sub Team 2015 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2system_8h_af6977ed8228d1641cbcd00a1d2dafbd1}{}\index{T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}!Receive\+Buffer@{Receive\+Buffer}}
+\index{Receive\+Buffer@{Receive\+Buffer}!T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}}
+\subsubsection[{Receive\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Circular\+Buffer}$\ast$ Receive\+Buffer}\label{_t_c_b_8_x_2src_2system_8h_af6977ed8228d1641cbcd00a1d2dafbd1}
+\hypertarget{_t_c_b_8_x_2src_2system_8h_a7b3147b42f558b813a7dbcc907978a10}{}\index{T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}!Transmit\+Buffer@{Transmit\+Buffer}}
+\index{Transmit\+Buffer@{Transmit\+Buffer}!T\+C\+B.\+X/src/system.\+h@{T\+C\+B.\+X/src/system.\+h}}
+\subsubsection[{Transmit\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Circular\+Buffer}$\ast$ Transmit\+Buffer}\label{_t_c_b_8_x_2src_2system_8h_a7b3147b42f558b813a7dbcc907978a10}

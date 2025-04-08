@@ -1,0 +1,107 @@
+\hypertarget{_w_c_b_8_x_2system_8h}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+W\+C\+B.X/system.h File Reference}
+\label{_w_c_b_8_x_2system_8h}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+W\+C\+B.\+X/system.\+h@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+W\+C\+B.\+X/system.\+h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}circular\+Buffer.\+h\char`\"{}}\\*
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_w_c_b_8_x_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}{S\+Y\+S\+\_\+\+F\+R\+E\+Q}~32000000\+L
+\begin{DoxyCompactList}\small\item\em System level defines, variables, and hardware setup. \end{DoxyCompactList}\item 
+\#define \hyperlink{_w_c_b_8_x_2system_8h_a99d7c812ba23bfdba5d29ec2fddf1e83}{F\+C\+Y}~\hyperlink{_w_c_b_8_x_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}{S\+Y\+S\+\_\+\+F\+R\+E\+Q}/2
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_w_c_b_8_x_2system_8h_aa8e656e1a832e2242eed137d19c899f0}{Initialize\+Hardware} (void)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_acbd4acd0d29e2d6c43104827f77d9cd2}{uint32} \hyperlink{_w_c_b_8_x_2system_8h_ae7a9f85f08c98c1537e1bbbf0fa84942}{ms\+Ticks}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$ \hyperlink{_w_c_b_8_x_2system_8h_af6977ed8228d1641cbcd00a1d2dafbd1}{Receive\+Buffer}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$ \hyperlink{_w_c_b_8_x_2system_8h_a7b3147b42f558b813a7dbcc907978a10}{Transmit\+Buffer}
+\item 
+bool \hyperlink{_w_c_b_8_x_2system_8h_a2c28ee25fb42f06590d4ad7854729000}{C\+L\+A\+W}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} \hyperlink{_w_c_b_8_x_2system_8h_a8fb0e498c385caae753fe4ac51abeeca}{T\+O\+R\+P\+E\+D\+O1}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} \hyperlink{_w_c_b_8_x_2system_8h_a9bdaf2f1a8b4c64beca44fcb08eec817}{T\+O\+R\+P\+E\+D\+O2}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} \hyperlink{_w_c_b_8_x_2system_8h_ab1fe6b6bc803f0f146938681e2abcc15}{D\+R\+O\+P}
+\item 
+bool \hyperlink{_w_c_b_8_x_2system_8h_aaf637915077bc69ff7231c88fc3478f4}{clawstatus}
+\item 
+bool \hyperlink{_w_c_b_8_x_2system_8h_ad7b7d2b1ce6405b8aa0a876a566ba4ed}{torpedo1status}
+\item 
+bool \hyperlink{_w_c_b_8_x_2system_8h_a9d4f8d026ff6ba2ebbeca58f15714728}{torpedo2status}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} \hyperlink{_w_c_b_8_x_2system_8h_a1a3128a6117c5bce0b8704589d2504c6}{dropstatus}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_w_c_b_8_x_2system_8h_a99d7c812ba23bfdba5d29ec2fddf1e83}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!F\+C\+Y@{F\+C\+Y}}
+\index{F\+C\+Y@{F\+C\+Y}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{F\+C\+Y}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+C\+Y~{\bf S\+Y\+S\+\_\+\+F\+R\+E\+Q}/2}\label{_w_c_b_8_x_2system_8h_a99d7c812ba23bfdba5d29ec2fddf1e83}
+\hypertarget{_w_c_b_8_x_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!S\+Y\+S\+\_\+\+F\+R\+E\+Q@{S\+Y\+S\+\_\+\+F\+R\+E\+Q}}
+\index{S\+Y\+S\+\_\+\+F\+R\+E\+Q@{S\+Y\+S\+\_\+\+F\+R\+E\+Q}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{S\+Y\+S\+\_\+\+F\+R\+E\+Q}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+\_\+\+F\+R\+E\+Q~32000000\+L}\label{_w_c_b_8_x_2system_8h_a7d5ce7b79462bbfb630ee53075540b65}
+
+
+System level defines, variables, and hardware setup. 
+
+\begin{DoxyAuthor}{Author}
+Mechatronics Robo\+Sub Team 2015 
+\end{DoxyAuthor}
+
+
+\subsection{Function Documentation}
+\hypertarget{_w_c_b_8_x_2system_8h_aa8e656e1a832e2242eed137d19c899f0}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!Initialize\+Hardware@{Initialize\+Hardware}}
+\index{Initialize\+Hardware@{Initialize\+Hardware}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{Initialize\+Hardware(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Initialize\+Hardware (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_w_c_b_8_x_2system_8h_aa8e656e1a832e2242eed137d19c899f0}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_w_c_b_8_x_2system_8h_a2c28ee25fb42f06590d4ad7854729000}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!C\+L\+A\+W@{C\+L\+A\+W}}
+\index{C\+L\+A\+W@{C\+L\+A\+W}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{C\+L\+A\+W}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+L\+A\+W}\label{_w_c_b_8_x_2system_8h_a2c28ee25fb42f06590d4ad7854729000}
+\hypertarget{_w_c_b_8_x_2system_8h_aaf637915077bc69ff7231c88fc3478f4}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!clawstatus@{clawstatus}}
+\index{clawstatus@{clawstatus}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{clawstatus}]{\setlength{\rightskip}{0pt plus 5cm}bool clawstatus}\label{_w_c_b_8_x_2system_8h_aaf637915077bc69ff7231c88fc3478f4}
+\hypertarget{_w_c_b_8_x_2system_8h_ab1fe6b6bc803f0f146938681e2abcc15}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!D\+R\+O\+P@{D\+R\+O\+P}}
+\index{D\+R\+O\+P@{D\+R\+O\+P}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{D\+R\+O\+P}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} D\+R\+O\+P}\label{_w_c_b_8_x_2system_8h_ab1fe6b6bc803f0f146938681e2abcc15}
+\hypertarget{_w_c_b_8_x_2system_8h_a1a3128a6117c5bce0b8704589d2504c6}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!dropstatus@{dropstatus}}
+\index{dropstatus@{dropstatus}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{dropstatus}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} dropstatus}\label{_w_c_b_8_x_2system_8h_a1a3128a6117c5bce0b8704589d2504c6}
+\hypertarget{_w_c_b_8_x_2system_8h_ae7a9f85f08c98c1537e1bbbf0fa84942}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!ms\+Ticks@{ms\+Ticks}}
+\index{ms\+Ticks@{ms\+Ticks}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{ms\+Ticks}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint32} ms\+Ticks}\label{_w_c_b_8_x_2system_8h_ae7a9f85f08c98c1537e1bbbf0fa84942}
+\begin{DoxyAuthor}{Author}
+Mechatronics Robo\+Sub Team 2015 
+\end{DoxyAuthor}
+\hypertarget{_w_c_b_8_x_2system_8h_af6977ed8228d1641cbcd00a1d2dafbd1}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!Receive\+Buffer@{Receive\+Buffer}}
+\index{Receive\+Buffer@{Receive\+Buffer}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{Receive\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Circular\+Buffer}$\ast$ Receive\+Buffer}\label{_w_c_b_8_x_2system_8h_af6977ed8228d1641cbcd00a1d2dafbd1}
+\hypertarget{_w_c_b_8_x_2system_8h_a8fb0e498c385caae753fe4ac51abeeca}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!T\+O\+R\+P\+E\+D\+O1@{T\+O\+R\+P\+E\+D\+O1}}
+\index{T\+O\+R\+P\+E\+D\+O1@{T\+O\+R\+P\+E\+D\+O1}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{T\+O\+R\+P\+E\+D\+O1}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} T\+O\+R\+P\+E\+D\+O1}\label{_w_c_b_8_x_2system_8h_a8fb0e498c385caae753fe4ac51abeeca}
+\hypertarget{_w_c_b_8_x_2system_8h_ad7b7d2b1ce6405b8aa0a876a566ba4ed}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!torpedo1status@{torpedo1status}}
+\index{torpedo1status@{torpedo1status}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{torpedo1status}]{\setlength{\rightskip}{0pt plus 5cm}bool torpedo1status}\label{_w_c_b_8_x_2system_8h_ad7b7d2b1ce6405b8aa0a876a566ba4ed}
+\hypertarget{_w_c_b_8_x_2system_8h_a9bdaf2f1a8b4c64beca44fcb08eec817}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!T\+O\+R\+P\+E\+D\+O2@{T\+O\+R\+P\+E\+D\+O2}}
+\index{T\+O\+R\+P\+E\+D\+O2@{T\+O\+R\+P\+E\+D\+O2}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{T\+O\+R\+P\+E\+D\+O2}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} T\+O\+R\+P\+E\+D\+O2}\label{_w_c_b_8_x_2system_8h_a9bdaf2f1a8b4c64beca44fcb08eec817}
+\hypertarget{_w_c_b_8_x_2system_8h_a9d4f8d026ff6ba2ebbeca58f15714728}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!torpedo2status@{torpedo2status}}
+\index{torpedo2status@{torpedo2status}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{torpedo2status}]{\setlength{\rightskip}{0pt plus 5cm}bool torpedo2status}\label{_w_c_b_8_x_2system_8h_a9d4f8d026ff6ba2ebbeca58f15714728}
+\hypertarget{_w_c_b_8_x_2system_8h_a7b3147b42f558b813a7dbcc907978a10}{}\index{W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}!Transmit\+Buffer@{Transmit\+Buffer}}
+\index{Transmit\+Buffer@{Transmit\+Buffer}!W\+C\+B.\+X/system.\+h@{W\+C\+B.\+X/system.\+h}}
+\subsubsection[{Transmit\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Circular\+Buffer}$\ast$ Transmit\+Buffer}\label{_w_c_b_8_x_2system_8h_a7b3147b42f558b813a7dbcc907978a10}

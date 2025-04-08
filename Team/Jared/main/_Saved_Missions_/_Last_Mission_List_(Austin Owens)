@@ -1,0 +1,8 @@
+Front={'minHueFront': 171, 'minValFront': 114, 'iteration1Front': 0, 'minSatFront': 175, 'epsilonFront': 0, 'minCurvesFront': 4, 'maxValFront': 145, 'maxCurvesFront': 4, 'maxHueFront': 180, 'operation1Front': 0, 'maxSatFront': 204}
+Bottom={'maxSatBottom': 202, 'operation1Bottom': 0, 'maxHueBottom': 181, 'minSatBottom': 126, 'minCurvesBottom': 4, 'minHueBottom': 170, 'iteration1Bottom': 0, 'minValBottom': 109, 'maxValBottom': 141, 'epsilonBottom': 0, 'maxCurvesBottom': 4}
+paramValueList={'buoyLED 1': 2, 'buoyTime 1': 15, 'torpedoTime 1': 20}
+missionList=('Torpedo 1', 'Buoy 1')
+Torpedo1Front={'minHueFront': 46, 'minValFront': 57, 'iteration1Front': 0, 'minSatFront': 10, 'epsilonFront': 0, 'minCurvesFront': 4, 'maxValFront': 117, 'maxCurvesFront': 4, 'maxHueFront': 102, 'operation1Front': 0, 'maxSatFront': 83}
+Torpedo1Bottom={'maxSatBottom': 0, 'operation1Bottom': 0, 'maxHueBottom': 0, 'minSatBottom': 0, 'minCurvesBottom': 4, 'minHueBottom': 0, 'iteration1Bottom': 0, 'minValBottom': 0, 'maxValBottom': 0, 'epsilonBottom': 0, 'maxCurvesBottom': 4}
+Buoy1Front={'minHueFront': 170, 'minValFront': 103, 'iteration1Front': 0, 'minSatFront': 172, 'epsilonFront': 0, 'minCurvesFront': 4, 'maxValFront': 148, 'maxCurvesFront': 4, 'maxHueFront': 181, 'operation1Front': 0, 'maxSatFront': 206}
+Buoy1Bottom={'maxSatBottom': 0, 'operation1Bottom': 0, 'maxHueBottom': 0, 'minSatBottom': 0, 'minCurvesBottom': 4, 'minHueBottom': 0, 'iteration1Bottom': 0, 'minValBottom': 0, 'maxValBottom': 0, 'epsilonBottom': 0, 'maxCurvesBottom': 4}

@@ -1,0 +1,102 @@
+\hypertarget{_d_o_a_8c}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+H\+Y\+D\+R\+A\+S.X/\+D\+O\+A.c File Reference}
+\label{_d_o_a_8c}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+H\+Y\+D\+R\+A\+S.\+X/\+D\+O\+A.\+c@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+H\+Y\+D\+R\+A\+S.\+X/\+D\+O\+A.\+c}}
+{\ttfamily \#include \char`\"{}D\+O\+A.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}system.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}direction.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_d_o_a_8c_a904e2e56ac6df16c47268bfdab877033}{phaseshift} (void)
+\item 
+double \hyperlink{_d_o_a_8c_a5581a94eede014e7c0682abf93f17dc3}{D\+O\+A} (int \hyperlink{_d_o_a_8h_a904e2e56ac6df16c47268bfdab877033}{phaseshift}, int Element)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_d_o_a_8c_a545fc02a1f937adb1e22fadbe507c990}{mark\+A} = 0
+\item 
+int \hyperlink{_d_o_a_8c_ae2b320497ad46102149053516defd4c8}{mark\+B} = 0
+\item 
+int32\+\_\+t \hyperlink{_d_o_a_8c_a5d8850ce09a72ce238f011c7e0b0124e}{deadtime\+A} = 0
+\item 
+int32\+\_\+t \hyperlink{_d_o_a_8c_ac7ed3d315b71ffe7180c207ad6563722}{deadtime\+B} = 0
+\item 
+int32\+\_\+t \hyperlink{_d_o_a_8c_a51605cae24ccc7ebdf3648e4e704e405}{Bearing\+Thresh\+A} = 0
+\item 
+int32\+\_\+t \hyperlink{_d_o_a_8c_a71e48e6254c5ec54b91e3bd614c2d654}{Bearing\+Thresh\+B} = 0
+\item 
+int32\+\_\+t \hyperlink{_d_o_a_8c_a1cb8f969ecf2063e3cffe82995a7707d}{Bearingholder\+Threshold} = 150000
+\item 
+int32\+\_\+t \hyperlink{_d_o_a_8c_a279331ebbe9efe2c68fcff223e8bb47d}{pingtracker\+Bearing} = 0
+\item 
+int32\+\_\+t \hyperlink{_d_o_a_8c_a152409d480fa7a14641bb406afbdf7cc}{Pingtracker\+Threshold} = 150000
+\item 
+int \hyperlink{_d_o_a_8c_a24f2e15d0c293b22c6cc10ae196577c8}{Bearingphaseshift\+A} = 0
+\item 
+int \hyperlink{_d_o_a_8c_aac0c5f6382e2959c1897db9bffe77392}{Bearingphaseshift\+B} = 0
+\item 
+int \hyperlink{_d_o_a_8c_a3b489521207725d0c7a694fdfa1533ac}{Bearing\+Element\+Number\+A} = 5
+\item 
+int \hyperlink{_d_o_a_8c_a60f9bb48eb481ae3bab1ff026de3ee9f}{Bearing\+Element\+Number\+B} = 5
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_d_o_a_8c_a5581a94eede014e7c0682abf93f17dc3}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!D\+O\+A@{D\+O\+A}}
+\index{D\+O\+A@{D\+O\+A}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{D\+O\+A(int phaseshift, int Element)}]{\setlength{\rightskip}{0pt plus 5cm}double D\+O\+A (
+\begin{DoxyParamCaption}
+\item[{int}]{phaseshift, }
+\item[{int}]{Element}
+\end{DoxyParamCaption}
+)}\label{_d_o_a_8c_a5581a94eede014e7c0682abf93f17dc3}
+\hypertarget{_d_o_a_8c_a904e2e56ac6df16c47268bfdab877033}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!phaseshift@{phaseshift}}
+\index{phaseshift@{phaseshift}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{phaseshift(void)}]{\setlength{\rightskip}{0pt plus 5cm}void phaseshift (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_d_o_a_8c_a904e2e56ac6df16c47268bfdab877033}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_d_o_a_8c_a3b489521207725d0c7a694fdfa1533ac}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Bearing\+Element\+Number\+A@{Bearing\+Element\+Number\+A}}
+\index{Bearing\+Element\+Number\+A@{Bearing\+Element\+Number\+A}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Bearing\+Element\+Number\+A}]{\setlength{\rightskip}{0pt plus 5cm}int Bearing\+Element\+Number\+A = 5}\label{_d_o_a_8c_a3b489521207725d0c7a694fdfa1533ac}
+\hypertarget{_d_o_a_8c_a60f9bb48eb481ae3bab1ff026de3ee9f}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Bearing\+Element\+Number\+B@{Bearing\+Element\+Number\+B}}
+\index{Bearing\+Element\+Number\+B@{Bearing\+Element\+Number\+B}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Bearing\+Element\+Number\+B}]{\setlength{\rightskip}{0pt plus 5cm}int Bearing\+Element\+Number\+B = 5}\label{_d_o_a_8c_a60f9bb48eb481ae3bab1ff026de3ee9f}
+\hypertarget{_d_o_a_8c_a1cb8f969ecf2063e3cffe82995a7707d}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Bearingholder\+Threshold@{Bearingholder\+Threshold}}
+\index{Bearingholder\+Threshold@{Bearingholder\+Threshold}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Bearingholder\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Bearingholder\+Threshold = 150000}\label{_d_o_a_8c_a1cb8f969ecf2063e3cffe82995a7707d}
+\hypertarget{_d_o_a_8c_a24f2e15d0c293b22c6cc10ae196577c8}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Bearingphaseshift\+A@{Bearingphaseshift\+A}}
+\index{Bearingphaseshift\+A@{Bearingphaseshift\+A}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Bearingphaseshift\+A}]{\setlength{\rightskip}{0pt plus 5cm}int Bearingphaseshift\+A = 0}\label{_d_o_a_8c_a24f2e15d0c293b22c6cc10ae196577c8}
+\hypertarget{_d_o_a_8c_aac0c5f6382e2959c1897db9bffe77392}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Bearingphaseshift\+B@{Bearingphaseshift\+B}}
+\index{Bearingphaseshift\+B@{Bearingphaseshift\+B}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Bearingphaseshift\+B}]{\setlength{\rightskip}{0pt plus 5cm}int Bearingphaseshift\+B = 0}\label{_d_o_a_8c_aac0c5f6382e2959c1897db9bffe77392}
+\hypertarget{_d_o_a_8c_a51605cae24ccc7ebdf3648e4e704e405}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Bearing\+Thresh\+A@{Bearing\+Thresh\+A}}
+\index{Bearing\+Thresh\+A@{Bearing\+Thresh\+A}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Bearing\+Thresh\+A}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Bearing\+Thresh\+A = 0}\label{_d_o_a_8c_a51605cae24ccc7ebdf3648e4e704e405}
+\hypertarget{_d_o_a_8c_a71e48e6254c5ec54b91e3bd614c2d654}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Bearing\+Thresh\+B@{Bearing\+Thresh\+B}}
+\index{Bearing\+Thresh\+B@{Bearing\+Thresh\+B}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Bearing\+Thresh\+B}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Bearing\+Thresh\+B = 0}\label{_d_o_a_8c_a71e48e6254c5ec54b91e3bd614c2d654}
+\hypertarget{_d_o_a_8c_a5d8850ce09a72ce238f011c7e0b0124e}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!deadtime\+A@{deadtime\+A}}
+\index{deadtime\+A@{deadtime\+A}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{deadtime\+A}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t deadtime\+A = 0}\label{_d_o_a_8c_a5d8850ce09a72ce238f011c7e0b0124e}
+\hypertarget{_d_o_a_8c_ac7ed3d315b71ffe7180c207ad6563722}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!deadtime\+B@{deadtime\+B}}
+\index{deadtime\+B@{deadtime\+B}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{deadtime\+B}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t deadtime\+B = 0}\label{_d_o_a_8c_ac7ed3d315b71ffe7180c207ad6563722}
+\hypertarget{_d_o_a_8c_a545fc02a1f937adb1e22fadbe507c990}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!mark\+A@{mark\+A}}
+\index{mark\+A@{mark\+A}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{mark\+A}]{\setlength{\rightskip}{0pt plus 5cm}int mark\+A = 0}\label{_d_o_a_8c_a545fc02a1f937adb1e22fadbe507c990}
+\hypertarget{_d_o_a_8c_ae2b320497ad46102149053516defd4c8}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!mark\+B@{mark\+B}}
+\index{mark\+B@{mark\+B}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{mark\+B}]{\setlength{\rightskip}{0pt plus 5cm}int mark\+B = 0}\label{_d_o_a_8c_ae2b320497ad46102149053516defd4c8}
+\hypertarget{_d_o_a_8c_a279331ebbe9efe2c68fcff223e8bb47d}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!pingtracker\+Bearing@{pingtracker\+Bearing}}
+\index{pingtracker\+Bearing@{pingtracker\+Bearing}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{pingtracker\+Bearing}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t pingtracker\+Bearing = 0}\label{_d_o_a_8c_a279331ebbe9efe2c68fcff223e8bb47d}
+\hypertarget{_d_o_a_8c_a152409d480fa7a14641bb406afbdf7cc}{}\index{D\+O\+A.\+c@{D\+O\+A.\+c}!Pingtracker\+Threshold@{Pingtracker\+Threshold}}
+\index{Pingtracker\+Threshold@{Pingtracker\+Threshold}!D\+O\+A.\+c@{D\+O\+A.\+c}}
+\subsubsection[{Pingtracker\+Threshold}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Pingtracker\+Threshold = 150000}\label{_d_o_a_8c_a152409d480fa7a14641bb406afbdf7cc}

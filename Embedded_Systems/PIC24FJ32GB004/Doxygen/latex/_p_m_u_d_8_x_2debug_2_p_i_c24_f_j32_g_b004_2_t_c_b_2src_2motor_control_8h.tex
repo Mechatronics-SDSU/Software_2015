@@ -1,0 +1,169 @@
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+P\+M\+U\+D.X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.h File Reference}
+\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+{\ttfamily \#include \char`\"{}types.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_motor_struct}{Motor\+Struct}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aab90df598eba3aa4b1a839b692079929}{M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}~4
+\begin{DoxyCompactList}\small\item\em Functions for controlling motor speed and direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a464175a6772350a32f81d565767f8f66}{M\+O\+T\+O\+R\+\_\+\+R\+A\+M\+P\+\_\+\+T\+I\+M\+E\+\_\+\+M\+S}~5
+\begin{DoxyCompactList}\small\item\em Period of motor pwm ramp. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_motor_struct}{Motor\+Struct} \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$ \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_ada12fc7ba4208b8db9a418086af66973}{Motor\+\_\+\+Create} (void)
+\begin{DoxyCompactList}\small\item\em Allocate memory for a new Motor struct, and initialize it. \end{DoxyCompactList}\item 
+void \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aa9b4f68a56a4bcb1fd0b33171b10c1ed}{Motor\+\_\+\+Init} (\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$const mtr, void($\ast$Update\+Velocity\+Func)(\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$const mtr))
+\begin{DoxyCompactList}\small\item\em Initialize a given Motor struct. \end{DoxyCompactList}\item 
+void \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a4b4e14fb7b3703ef05eaf5e7daae0349}{Motor\+\_\+\+Update\+Velocity} (\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$const mtr)
+\begin{DoxyCompactList}\small\item\em Update the hardware P\+W\+M, and direction pin based on the Motor Velocity. \end{DoxyCompactList}\item 
+void \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aed9887f6ef3e34ee946c234d2723eb5c}{Ramp\+Motors} (void)
+\begin{DoxyCompactList}\small\item\em Ramps the motor up or down in relation to the target speed from the current. \end{DoxyCompactList}\item 
+void \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a03247b1d2568be30ea272e467cbb44b8}{Set\+Motor\+Target} (\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} motor\+Num, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} direction, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} speed)
+\begin{DoxyCompactList}\small\item\em Set the target speed and direction of the motor in a buffer to be handled by \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aed9887f6ef3e34ee946c234d2723eb5c}{Ramp\+Motors()} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$ \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a912e6d37caecd3f1dd7e253029b10964}{motors} \mbox{[}\hyperlink{_t_c_b_8_x_2src_2motor_control_8h_aab90df598eba3aa4b1a839b692079929}{M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aab90df598eba3aa4b1a839b692079929}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T@{M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}}
+\index{M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T@{M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T~4}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aab90df598eba3aa4b1a839b692079929}
+
+
+Functions for controlling motor speed and direction. 
+
+\begin{DoxyAuthor}{Author}
+Mechatronics Robo\+Sub Team 2015 
+\end{DoxyAuthor}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a464175a6772350a32f81d565767f8f66}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!M\+O\+T\+O\+R\+\_\+\+R\+A\+M\+P\+\_\+\+T\+I\+M\+E\+\_\+\+M\+S@{M\+O\+T\+O\+R\+\_\+\+R\+A\+M\+P\+\_\+\+T\+I\+M\+E\+\_\+\+M\+S}}
+\index{M\+O\+T\+O\+R\+\_\+\+R\+A\+M\+P\+\_\+\+T\+I\+M\+E\+\_\+\+M\+S@{M\+O\+T\+O\+R\+\_\+\+R\+A\+M\+P\+\_\+\+T\+I\+M\+E\+\_\+\+M\+S}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{M\+O\+T\+O\+R\+\_\+\+R\+A\+M\+P\+\_\+\+T\+I\+M\+E\+\_\+\+M\+S}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+O\+T\+O\+R\+\_\+\+R\+A\+M\+P\+\_\+\+T\+I\+M\+E\+\_\+\+M\+S~5}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a464175a6772350a32f81d565767f8f66}
+
+
+Period of motor pwm ramp. 
+
+
+
+\subsection{Typedef Documentation}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!Motor@{Motor}}
+\index{Motor@{Motor}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{Motor}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf Motor\+Struct} {\bf Motor}}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}
+
+
+\subsection{Function Documentation}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_ada12fc7ba4208b8db9a418086af66973}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!Motor\+\_\+\+Create@{Motor\+\_\+\+Create}}
+\index{Motor\+\_\+\+Create@{Motor\+\_\+\+Create}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{Motor\+\_\+\+Create(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motor}$\ast$ Motor\+\_\+\+Create (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_ada12fc7ba4208b8db9a418086af66973}
+
+
+Allocate memory for a new Motor struct, and initialize it. 
+
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aa9b4f68a56a4bcb1fd0b33171b10c1ed}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!Motor\+\_\+\+Init@{Motor\+\_\+\+Init}}
+\index{Motor\+\_\+\+Init@{Motor\+\_\+\+Init}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{Motor\+\_\+\+Init(\+Motor $\ast$const mtr, void($\ast$\+Update\+Velocity\+Func)(\+Motor $\ast$const mtr))}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Motor} $\ast$const}]{mtr, }
+\item[{void($\ast$)({\bf Motor} $\ast$const mtr)}]{Update\+Velocity\+Func}
+\end{DoxyParamCaption}
+)}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aa9b4f68a56a4bcb1fd0b33171b10c1ed}
+
+
+Initialize a given Motor struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mtr} & Pointer to motor struct \\
+\hline
+{\em Update\+Velocity\+Func} & Pointer to function to set duty cycle and direction\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a4b4e14fb7b3703ef05eaf5e7daae0349}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!Motor\+\_\+\+Update\+Velocity@{Motor\+\_\+\+Update\+Velocity}}
+\index{Motor\+\_\+\+Update\+Velocity@{Motor\+\_\+\+Update\+Velocity}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{Motor\+\_\+\+Update\+Velocity(\+Motor $\ast$const mtr)}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+\_\+\+Update\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Motor} $\ast$const}]{mtr}
+\end{DoxyParamCaption}
+)}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a4b4e14fb7b3703ef05eaf5e7daae0349}
+
+
+Update the hardware P\+W\+M, and direction pin based on the Motor Velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mtr} & Pointer to the motor struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aed9887f6ef3e34ee946c234d2723eb5c}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!Ramp\+Motors@{Ramp\+Motors}}
+\index{Ramp\+Motors@{Ramp\+Motors}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{Ramp\+Motors(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Ramp\+Motors (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aed9887f6ef3e34ee946c234d2723eb5c}
+
+
+Ramps the motor up or down in relation to the target speed from the current. 
+
+It also changes the direction as needed.
+
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a03247b1d2568be30ea272e467cbb44b8}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!Set\+Motor\+Target@{Set\+Motor\+Target}}
+\index{Set\+Motor\+Target@{Set\+Motor\+Target}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{Set\+Motor\+Target(uint8 motor\+Num, uint8 direction, uint8 speed)}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+Motor\+Target (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{motor\+Num, }
+\item[{{\bf uint8}}]{direction, }
+\item[{{\bf uint8}}]{speed}
+\end{DoxyParamCaption}
+)}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a03247b1d2568be30ea272e467cbb44b8}
+
+
+Set the target speed and direction of the motor in a buffer to be handled by \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aed9887f6ef3e34ee946c234d2723eb5c}{Ramp\+Motors()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motor\+Num} & This is based on the frame\+I\+D of the set motor packets. \\
+\hline
+{\em direction} & The direction of the motor, can be \mbox{[}0, 1\mbox{]}. \\
+\hline
+{\em speed} & The speed of the motor in duty\+Cycle \mbox{[}0, 255\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a912e6d37caecd3f1dd7e253029b10964}{}\index{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}!motors@{motors}}
+\index{motors@{motors}!P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h@{P\+M\+U\+D.\+X/debug/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B/src/motor\+Control.\+h}}
+\subsubsection[{motors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motor}$\ast$ motors\mbox{[}{\bf M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}\mbox{]}}\label{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a912e6d37caecd3f1dd7e253029b10964}

@@ -1,0 +1,25 @@
+var annotated_dup =
+[
+    [ "BCDspace", "union_b_c_dspace.html", "union_b_c_dspace" ],
+    [ "CircularBufferStruct", "struct_circular_buffer_struct.html", "struct_circular_buffer_struct" ],
+    [ "MotorStruct", "struct_motor_struct.html", "struct_motor_struct" ],
+    [ "PacketBatteryInfoGetStruct", "struct_packet_battery_info_get_struct.html", "struct_packet_battery_info_get_struct" ],
+    [ "PacketDepthGetStruct", "struct_packet_depth_get_struct.html", "struct_packet_depth_get_struct" ],
+    [ "PacketDirtyPowerGetStruct", "struct_packet_dirty_power_get_struct.html", "struct_packet_dirty_power_get_struct" ],
+    [ "PacketDropperGetStruct", "struct_packet_dropper_get_struct.html", "struct_packet_dropper_get_struct" ],
+    [ "PacketDropperSetStruct", "struct_packet_dropper_set_struct.html", "struct_packet_dropper_set_struct" ],
+    [ "PacketGrabberGetStruct", "struct_packet_grabber_get_struct.html", "struct_packet_grabber_get_struct" ],
+    [ "PacketGrabberSetStruct", "struct_packet_grabber_set_struct.html", "struct_packet_grabber_set_struct" ],
+    [ "PacketHeaderStruct", "struct_packet_header_struct.html", "struct_packet_header_struct" ],
+    [ "PacketHydrophonesGetStruct", "struct_packet_hydrophones_get_struct.html", "struct_packet_hydrophones_get_struct" ],
+    [ "PacketMotorGetStruct", "struct_packet_motor_get_struct.html", "struct_packet_motor_get_struct" ],
+    [ "PacketMotorSetStruct", "struct_packet_motor_set_struct.html", "struct_packet_motor_set_struct" ],
+    [ "PacketPingerHeading1GetStruct", "struct_packet_pinger_heading1_get_struct.html", "struct_packet_pinger_heading1_get_struct" ],
+    [ "PacketPingerHeading2GetStruct", "struct_packet_pinger_heading2_get_struct.html", "struct_packet_pinger_heading2_get_struct" ],
+    [ "PacketSensorDataGetStruct", "struct_packet_sensor_data_get_struct.html", "struct_packet_sensor_data_get_struct" ],
+    [ "PacketTorpedoGetStruct", "struct_packet_torpedo_get_struct.html", "struct_packet_torpedo_get_struct" ],
+    [ "PacketTorpedoSetStruct", "struct_packet_torpedo_set_struct.html", "struct_packet_torpedo_set_struct" ],
+    [ "PacketUnion", "union_packet_union.html", "union_packet_union" ],
+    [ "PacketVariableSetStruct", "struct_packet_variable_set_struct.html", "struct_packet_variable_set_struct" ],
+    [ "sevenSeg", "structseven_seg.html", "structseven_seg" ]
+];

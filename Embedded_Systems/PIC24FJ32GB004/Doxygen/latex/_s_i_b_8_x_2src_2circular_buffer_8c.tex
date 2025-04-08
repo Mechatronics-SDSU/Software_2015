@@ -1,0 +1,113 @@
+\hypertarget{_s_i_b_8_x_2src_2circular_buffer_8c}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+S\+I\+B.X/src/circular\+Buffer.c File Reference}
+\label{_s_i_b_8_x_2src_2circular_buffer_8c}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+S\+I\+B.\+X/src/circular\+Buffer.\+c@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+S\+I\+B.\+X/src/circular\+Buffer.\+c}}
+{\ttfamily \#include \char`\"{}circular\+Buffer.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$ \hyperlink{_s_i_b_8_x_2src_2circular_buffer_8c_a3d52de57f8ea9abbc9ce8c21b1b7571c}{Circular\+Buffer\+\_\+\+Create} (void)
+\begin{DoxyCompactList}\small\item\em Initializes and allocates memory for a new Circular\+Communication\+Buffer. \end{DoxyCompactList}\item 
+void \hyperlink{_s_i_b_8_x_2src_2circular_buffer_8c_a8577d82f9cfe7767e2baeadcbb958a60}{Circular\+Buffer\+\_\+\+Write} (\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$buffer, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} data\mbox{[}$\,$\mbox{]}, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_ac2a9e79eb120216f855626495b7bd18a}{uint16} length)
+\begin{DoxyCompactList}\small\item\em Writes bytes of data into the buffer. \end{DoxyCompactList}\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} \hyperlink{_s_i_b_8_x_2src_2circular_buffer_8c_afeffd9e51b39ce9085240d6162556e64}{Circular\+Buffer\+\_\+\+Read} (\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$buffer, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} $\ast$data)
+\begin{DoxyCompactList}\small\item\em Returns the next entry ready to be processed. \end{DoxyCompactList}\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} \hyperlink{_s_i_b_8_x_2src_2circular_buffer_8c_a644639ad85dfe5d1bc2ff2b2304e869d}{Circular\+Buffer\+\_\+\+Read\+Copy} (\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$buffer, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} data\mbox{[}$\,$\mbox{]}, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_ac2a9e79eb120216f855626495b7bd18a}{uint16} length)
+\begin{DoxyCompactList}\small\item\em Returns the next entry ready to be processed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_s_i_b_8_x_2src_2circular_buffer_8c_a3d52de57f8ea9abbc9ce8c21b1b7571c}{}\index{S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}!Circular\+Buffer\+\_\+\+Create@{Circular\+Buffer\+\_\+\+Create}}
+\index{Circular\+Buffer\+\_\+\+Create@{Circular\+Buffer\+\_\+\+Create}!S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}}
+\subsubsection[{Circular\+Buffer\+\_\+\+Create(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Circular\+Buffer}$\ast$ Circular\+Buffer\+\_\+\+Create (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_s_i_b_8_x_2src_2circular_buffer_8c_a3d52de57f8ea9abbc9ce8c21b1b7571c}
+
+
+Initializes and allocates memory for a new Circular\+Communication\+Buffer. 
+
+\begin{DoxyAuthor}{Author}
+Petar Tasev
+\end{DoxyAuthor}
+\begin{DoxyCopyright}{Copyright}
+Copyright (C) 2014-\/2015 Petar Tasev, All Rights Reserved. 
+\end{DoxyCopyright}
+\hypertarget{_s_i_b_8_x_2src_2circular_buffer_8c_afeffd9e51b39ce9085240d6162556e64}{}\index{S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}!Circular\+Buffer\+\_\+\+Read@{Circular\+Buffer\+\_\+\+Read}}
+\index{Circular\+Buffer\+\_\+\+Read@{Circular\+Buffer\+\_\+\+Read}!S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}}
+\subsubsection[{Circular\+Buffer\+\_\+\+Read(\+Circular\+Buffer $\ast$buffer, uint8 $\ast$data)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} Circular\+Buffer\+\_\+\+Read (
+\begin{DoxyParamCaption}
+\item[{{\bf Circular\+Buffer} $\ast$}]{buffer, }
+\item[{{\bf uint8} $\ast$}]{data}
+\end{DoxyParamCaption}
+)}\label{_s_i_b_8_x_2src_2circular_buffer_8c_afeffd9e51b39ce9085240d6162556e64}
+
+
+Returns the next entry ready to be processed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The Circular\+Buffer from which data will be read \\
+\hline
+{\em data} & The pointer to the destination of the data \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if successful, and 0 if failed
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_s_i_b_8_x_2src_2circular_buffer_8c_a644639ad85dfe5d1bc2ff2b2304e869d}{}\index{S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}!Circular\+Buffer\+\_\+\+Read\+Copy@{Circular\+Buffer\+\_\+\+Read\+Copy}}
+\index{Circular\+Buffer\+\_\+\+Read\+Copy@{Circular\+Buffer\+\_\+\+Read\+Copy}!S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}}
+\subsubsection[{Circular\+Buffer\+\_\+\+Read\+Copy(\+Circular\+Buffer $\ast$buffer, uint8 data[], uint16 length)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} Circular\+Buffer\+\_\+\+Read\+Copy (
+\begin{DoxyParamCaption}
+\item[{{\bf Circular\+Buffer} $\ast$}]{buffer, }
+\item[{{\bf uint8}}]{data\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf uint16}}]{length}
+\end{DoxyParamCaption}
+)}\label{_s_i_b_8_x_2src_2circular_buffer_8c_a644639ad85dfe5d1bc2ff2b2304e869d}
+
+
+Returns the next entry ready to be processed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The Circular\+Buffer from which data will be read \\
+\hline
+{\em data} & The array pointer to the destination of the copied entries \\
+\hline
+{\em length} & The amount of data to be copied \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Returns 1 if successful, and 0 if failed
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_s_i_b_8_x_2src_2circular_buffer_8c_a8577d82f9cfe7767e2baeadcbb958a60}{}\index{S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}!Circular\+Buffer\+\_\+\+Write@{Circular\+Buffer\+\_\+\+Write}}
+\index{Circular\+Buffer\+\_\+\+Write@{Circular\+Buffer\+\_\+\+Write}!S\+I\+B.\+X/src/circular\+Buffer.\+c@{S\+I\+B.\+X/src/circular\+Buffer.\+c}}
+\subsubsection[{Circular\+Buffer\+\_\+\+Write(\+Circular\+Buffer $\ast$buffer, uint8 data[], uint16 length)}]{\setlength{\rightskip}{0pt plus 5cm}void Circular\+Buffer\+\_\+\+Write (
+\begin{DoxyParamCaption}
+\item[{{\bf Circular\+Buffer} $\ast$}]{buffer, }
+\item[{{\bf uint8}}]{data\mbox{[}$\,$\mbox{]}, }
+\item[{{\bf uint16}}]{length}
+\end{DoxyParamCaption}
+)}\label{_s_i_b_8_x_2src_2circular_buffer_8c_a8577d82f9cfe7767e2baeadcbb958a60}
+
+
+Writes bytes of data into the buffer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em buffer} & The Circular\+Buffer to which data will be written \\
+\hline
+{\em data} & The array pointer to the bytes that will be written \\
+\hline
+{\em length} & The length of the data array being passed in\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}

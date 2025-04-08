@@ -1,0 +1,70 @@
+\hypertarget{_t_c_b_8_x_2src_2packet_com_8c}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.X/src/packet\+Com.c File Reference}
+\label{_t_c_b_8_x_2src_2packet_com_8c}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/packet\+Com.\+c@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/packet\+Com.\+c}}
+{\ttfamily \#include \char`\"{}packet\+Com.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}circular\+Buffer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}packets.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}crc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}motor\+Control.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$xc.\+h$>$}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}system.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_t_c_b_8_x_2src_2packet_com_8c_aec7810ce40f85df04ec6dc3dec7c6d5b}{Packet\+Com\+State\+\_\+\+Run} (void)
+\begin{DoxyCompactList}\small\item\em Runs the state machine for the main communication. \end{DoxyCompactList}\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2packet_com_8h_a752359e26f7c61f91b42d32d9170bac8}{Packet\+Com\+State} \hyperlink{_t_c_b_8_x_2src_2packet_com_8c_a01a2603c9ec28affe4389d3bf0c70bb1}{Packet\+Com\+State\+\_\+\+Parse\+Frame\+Id} (void)
+\begin{DoxyCompactList}\small\item\em Analyzes the current packet frame id to decide on the next state. \end{DoxyCompactList}\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} \hyperlink{_t_c_b_8_x_2src_2packet_com_8c_ab86ba82850cc5a90fec483358e79c6da}{Packet\+Com\+State\+\_\+\+Check\+C\+R\+C} (void)
+\begin{DoxyCompactList}\small\item\em Checks the C\+R\+C of the received current packet against a calculated one. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_t_c_b_8_x_2src_2packet_com_8c_ab86ba82850cc5a90fec483358e79c6da}{}\index{T\+C\+B.\+X/src/packet\+Com.\+c@{T\+C\+B.\+X/src/packet\+Com.\+c}!Packet\+Com\+State\+\_\+\+Check\+C\+R\+C@{Packet\+Com\+State\+\_\+\+Check\+C\+R\+C}}
+\index{Packet\+Com\+State\+\_\+\+Check\+C\+R\+C@{Packet\+Com\+State\+\_\+\+Check\+C\+R\+C}!T\+C\+B.\+X/src/packet\+Com.\+c@{T\+C\+B.\+X/src/packet\+Com.\+c}}
+\subsubsection[{Packet\+Com\+State\+\_\+\+Check\+C\+R\+C(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf uint8} Packet\+Com\+State\+\_\+\+Check\+C\+R\+C (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2packet_com_8c_ab86ba82850cc5a90fec483358e79c6da}
+
+
+Checks the C\+R\+C of the received current packet against a calculated one. 
+
+\begin{DoxyReturn}{Returns}
+Returns 1 if the C\+R\+C is correct, or 0 if different
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2packet_com_8c_a01a2603c9ec28affe4389d3bf0c70bb1}{}\index{T\+C\+B.\+X/src/packet\+Com.\+c@{T\+C\+B.\+X/src/packet\+Com.\+c}!Packet\+Com\+State\+\_\+\+Parse\+Frame\+Id@{Packet\+Com\+State\+\_\+\+Parse\+Frame\+Id}}
+\index{Packet\+Com\+State\+\_\+\+Parse\+Frame\+Id@{Packet\+Com\+State\+\_\+\+Parse\+Frame\+Id}!T\+C\+B.\+X/src/packet\+Com.\+c@{T\+C\+B.\+X/src/packet\+Com.\+c}}
+\subsubsection[{Packet\+Com\+State\+\_\+\+Parse\+Frame\+Id(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Packet\+Com\+State} Packet\+Com\+State\+\_\+\+Parse\+Frame\+Id (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2packet_com_8c_a01a2603c9ec28affe4389d3bf0c70bb1}
+
+
+Analyzes the current packet frame id to decide on the next state. 
+
+\begin{DoxyReturn}{Returns}
+Returns the next state based on the frame id
+\end{DoxyReturn}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2packet_com_8c_aec7810ce40f85df04ec6dc3dec7c6d5b}{}\index{T\+C\+B.\+X/src/packet\+Com.\+c@{T\+C\+B.\+X/src/packet\+Com.\+c}!Packet\+Com\+State\+\_\+\+Run@{Packet\+Com\+State\+\_\+\+Run}}
+\index{Packet\+Com\+State\+\_\+\+Run@{Packet\+Com\+State\+\_\+\+Run}!T\+C\+B.\+X/src/packet\+Com.\+c@{T\+C\+B.\+X/src/packet\+Com.\+c}}
+\subsubsection[{Packet\+Com\+State\+\_\+\+Run(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Packet\+Com\+State\+\_\+\+Run (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2packet_com_8c_aec7810ce40f85df04ec6dc3dec7c6d5b}
+
+
+Runs the state machine for the main communication. 
+
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}

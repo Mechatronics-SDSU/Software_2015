@@ -1,0 +1,128 @@
+\hypertarget{_t_c_b_8_x_2src_2motor_control_8c}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.X/src/motor\+Control.c File Reference}
+\label{_t_c_b_8_x_2src_2motor_control_8c}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/motor\+Control.\+c@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/motor\+Control.\+c}}
+{\ttfamily \#include \char`\"{}motor\+Control.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdlib.\+h$>$}\\*
+{\ttfamily \#include $<$xc.\+h$>$}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$ \hyperlink{_t_c_b_8_x_2src_2motor_control_8c_ada12fc7ba4208b8db9a418086af66973}{Motor\+\_\+\+Create} (void)
+\begin{DoxyCompactList}\small\item\em Allocate memory for a new Motor struct, and initialize it. \end{DoxyCompactList}\item 
+void \hyperlink{_t_c_b_8_x_2src_2motor_control_8c_aa9b4f68a56a4bcb1fd0b33171b10c1ed}{Motor\+\_\+\+Init} (\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$const mtr, void($\ast$Update\+Velocity\+Func)(\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$const mtr))
+\begin{DoxyCompactList}\small\item\em Initialize a given Motor struct. \end{DoxyCompactList}\item 
+void \hyperlink{_t_c_b_8_x_2src_2motor_control_8c_a03247b1d2568be30ea272e467cbb44b8}{Set\+Motor\+Target} (\hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} motor\+Num, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} direction, \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_a33a5e996e7a90acefb8b1c0bea47e365}{uint8} speed)
+\begin{DoxyCompactList}\small\item\em Set the target speed and direction of the motor in a buffer to be handled by \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aed9887f6ef3e34ee946c234d2723eb5c}{Ramp\+Motors()} \end{DoxyCompactList}\item 
+void \hyperlink{_t_c_b_8_x_2src_2motor_control_8c_aed9887f6ef3e34ee946c234d2723eb5c}{Ramp\+Motors} (void)
+\begin{DoxyCompactList}\small\item\em Ramps the motor up or down in relation to the target speed from the current. \end{DoxyCompactList}\item 
+void \hyperlink{_t_c_b_8_x_2src_2motor_control_8c_a4b4e14fb7b3703ef05eaf5e7daae0349}{Motor\+\_\+\+Update\+Velocity} (\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$const mtr)
+\begin{DoxyCompactList}\small\item\em Update the hardware P\+W\+M, and direction pin based on the Motor Velocity. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_a769469315e63d8c0ea1e9c7a42f4b80d}{Motor} $\ast$ \hyperlink{_t_c_b_8_x_2src_2motor_control_8c_a912e6d37caecd3f1dd7e253029b10964}{motors} \mbox{[}\hyperlink{_t_c_b_8_x_2src_2motor_control_8h_aab90df598eba3aa4b1a839b692079929}{M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_t_c_b_8_x_2src_2motor_control_8c_ada12fc7ba4208b8db9a418086af66973}{}\index{T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}!Motor\+\_\+\+Create@{Motor\+\_\+\+Create}}
+\index{Motor\+\_\+\+Create@{Motor\+\_\+\+Create}!T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}}
+\subsubsection[{Motor\+\_\+\+Create(void)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motor}$\ast$ Motor\+\_\+\+Create (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2motor_control_8c_ada12fc7ba4208b8db9a418086af66973}
+
+
+Allocate memory for a new Motor struct, and initialize it. 
+
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2motor_control_8c_aa9b4f68a56a4bcb1fd0b33171b10c1ed}{}\index{T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}!Motor\+\_\+\+Init@{Motor\+\_\+\+Init}}
+\index{Motor\+\_\+\+Init@{Motor\+\_\+\+Init}!T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}}
+\subsubsection[{Motor\+\_\+\+Init(\+Motor $\ast$const mtr, void($\ast$\+Update\+Velocity\+Func)(\+Motor $\ast$const mtr))}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+\_\+\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf Motor} $\ast$const}]{mtr, }
+\item[{void($\ast$)({\bf Motor} $\ast$const mtr)}]{Update\+Velocity\+Func}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2motor_control_8c_aa9b4f68a56a4bcb1fd0b33171b10c1ed}
+
+
+Initialize a given Motor struct. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mtr} & Pointer to motor struct \\
+\hline
+{\em Update\+Velocity\+Func} & Pointer to function to set duty cycle and direction\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2motor_control_8c_a4b4e14fb7b3703ef05eaf5e7daae0349}{}\index{T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}!Motor\+\_\+\+Update\+Velocity@{Motor\+\_\+\+Update\+Velocity}}
+\index{Motor\+\_\+\+Update\+Velocity@{Motor\+\_\+\+Update\+Velocity}!T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}}
+\subsubsection[{Motor\+\_\+\+Update\+Velocity(\+Motor $\ast$const mtr)}]{\setlength{\rightskip}{0pt plus 5cm}void Motor\+\_\+\+Update\+Velocity (
+\begin{DoxyParamCaption}
+\item[{{\bf Motor} $\ast$const}]{mtr}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2motor_control_8c_a4b4e14fb7b3703ef05eaf5e7daae0349}
+
+
+Update the hardware P\+W\+M, and direction pin based on the Motor Velocity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mtr} & Pointer to the motor struct\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2motor_control_8c_aed9887f6ef3e34ee946c234d2723eb5c}{}\index{T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}!Ramp\+Motors@{Ramp\+Motors}}
+\index{Ramp\+Motors@{Ramp\+Motors}!T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}}
+\subsubsection[{Ramp\+Motors(void)}]{\setlength{\rightskip}{0pt plus 5cm}void Ramp\+Motors (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2motor_control_8c_aed9887f6ef3e34ee946c234d2723eb5c}
+
+
+Ramps the motor up or down in relation to the target speed from the current. 
+
+It also changes the direction as needed.
+
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2motor_control_8c_a03247b1d2568be30ea272e467cbb44b8}{}\index{T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}!Set\+Motor\+Target@{Set\+Motor\+Target}}
+\index{Set\+Motor\+Target@{Set\+Motor\+Target}!T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}}
+\subsubsection[{Set\+Motor\+Target(uint8 motor\+Num, uint8 direction, uint8 speed)}]{\setlength{\rightskip}{0pt plus 5cm}void Set\+Motor\+Target (
+\begin{DoxyParamCaption}
+\item[{{\bf uint8}}]{motor\+Num, }
+\item[{{\bf uint8}}]{direction, }
+\item[{{\bf uint8}}]{speed}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2motor_control_8c_a03247b1d2568be30ea272e467cbb44b8}
+
+
+Set the target speed and direction of the motor in a buffer to be handled by \hyperlink{_p_m_u_d_8_x_2debug_2_p_i_c24_f_j32_g_b004_2_t_c_b_2src_2motor_control_8h_aed9887f6ef3e34ee946c234d2723eb5c}{Ramp\+Motors()} 
+
+
+\begin{DoxyParams}{Parameters}
+{\em motor\+Num} & This is based on the frame\+I\+D of the set motor packets. \\
+\hline
+{\em direction} & The direction of the motor, can be \mbox{[}0, 1\mbox{]}. \\
+\hline
+{\em speed} & The speed of the motor in duty\+Cycle \mbox{[}0, 255\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_t_c_b_8_x_2src_2motor_control_8c_a912e6d37caecd3f1dd7e253029b10964}{}\index{T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}!motors@{motors}}
+\index{motors@{motors}!T\+C\+B.\+X/src/motor\+Control.\+c@{T\+C\+B.\+X/src/motor\+Control.\+c}}
+\subsubsection[{motors}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Motor}$\ast$ motors\mbox{[}{\bf M\+O\+T\+O\+R\+\_\+\+C\+O\+U\+N\+T}\mbox{]}}\label{_t_c_b_8_x_2src_2motor_control_8c_a912e6d37caecd3f1dd7e253029b10964}

@@ -1,0 +1,55 @@
+\hypertarget{_t_c_b_8_x_2src_2main_8c}{}\section{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.X/src/main.c File Reference}
+\label{_t_c_b_8_x_2src_2main_8c}\index{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/main.\+c@{C\+:/\+Users/\+Petar/\+Desktop/\+Passport/\+My\+Files/\+C/\+Robo\+Sub/\+Software\+\_\+\+Team/\+Robo\+Sub\+\_\+2015/\+Embedded\+\_\+\+Systems/\+P\+I\+C24\+F\+J32\+G\+B004/\+T\+C\+B.\+X/src/main.\+c}}
+{\ttfamily \#include \char`\"{}system.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}libpic30.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}crc.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}motor\+Control.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}circular\+Buffer.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}packet\+Com.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}packets.\+h\char`\"{}}\\*
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int16\+\_\+t \hyperlink{_t_c_b_8_x_2src_2main_8c_aec570f4ab450e8224be63b7dcfa62b35}{main} (void)
+\begin{DoxyCompactList}\small\item\em Main function containing the background tasks. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+volatile \hyperlink{_h_y_d_r_a_s_8_x_2types_8h_acbd4acd0d29e2d6c43104827f77d9cd2}{uint32} \hyperlink{_t_c_b_8_x_2src_2main_8c_ae7a9f85f08c98c1537e1bbbf0fa84942}{ms\+Ticks} = 0
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$ \hyperlink{_t_c_b_8_x_2src_2main_8c_af6977ed8228d1641cbcd00a1d2dafbd1}{Receive\+Buffer}
+\item 
+\hyperlink{_h_y_d_r_a_s_8_x_2circular_buffer_8h_a84433a0f15c76f976da399506eabc90c}{Circular\+Buffer} $\ast$ \hyperlink{_t_c_b_8_x_2src_2main_8c_a7b3147b42f558b813a7dbcc907978a10}{Transmit\+Buffer}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\hypertarget{_t_c_b_8_x_2src_2main_8c_aec570f4ab450e8224be63b7dcfa62b35}{}\index{T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}!main@{main}}
+\index{main@{main}!T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}}
+\subsubsection[{main(void)}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t main (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{_t_c_b_8_x_2src_2main_8c_aec570f4ab450e8224be63b7dcfa62b35}
+
+
+Main function containing the background tasks. 
+
+\begin{DoxyAuthor}{Author}
+Petar Tasev 
+\end{DoxyAuthor}
+
+
+\subsection{Variable Documentation}
+\hypertarget{_t_c_b_8_x_2src_2main_8c_ae7a9f85f08c98c1537e1bbbf0fa84942}{}\index{T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}!ms\+Ticks@{ms\+Ticks}}
+\index{ms\+Ticks@{ms\+Ticks}!T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}}
+\subsubsection[{ms\+Ticks}]{\setlength{\rightskip}{0pt plus 5cm}volatile {\bf uint32} ms\+Ticks = 0}\label{_t_c_b_8_x_2src_2main_8c_ae7a9f85f08c98c1537e1bbbf0fa84942}
+\begin{DoxyAuthor}{Author}
+Mechatronics Robo\+Sub Team 2015 
+\end{DoxyAuthor}
+\hypertarget{_t_c_b_8_x_2src_2main_8c_af6977ed8228d1641cbcd00a1d2dafbd1}{}\index{T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}!Receive\+Buffer@{Receive\+Buffer}}
+\index{Receive\+Buffer@{Receive\+Buffer}!T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}}
+\subsubsection[{Receive\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Circular\+Buffer}$\ast$ Receive\+Buffer}\label{_t_c_b_8_x_2src_2main_8c_af6977ed8228d1641cbcd00a1d2dafbd1}
+\hypertarget{_t_c_b_8_x_2src_2main_8c_a7b3147b42f558b813a7dbcc907978a10}{}\index{T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}!Transmit\+Buffer@{Transmit\+Buffer}}
+\index{Transmit\+Buffer@{Transmit\+Buffer}!T\+C\+B.\+X/src/main.\+c@{T\+C\+B.\+X/src/main.\+c}}
+\subsubsection[{Transmit\+Buffer}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Circular\+Buffer}$\ast$ Transmit\+Buffer}\label{_t_c_b_8_x_2src_2main_8c_a7b3147b42f558b813a7dbcc907978a10}

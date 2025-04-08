@@ -1,0 +1,4 @@
+Sparton=["getPitch", "getRoll", "getYaw"]
+DVL=["getAcceleration", "getPosition", "getVelocity", "getAcceleration"]
+TCB=["setPWM", "getPWM"]
+Microcontroller=["something"]
