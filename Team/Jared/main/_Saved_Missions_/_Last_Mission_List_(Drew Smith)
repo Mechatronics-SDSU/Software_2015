@@ -1,6 +1,0 @@
-Bottom={'maxSatBottom': 207, 'operation1Bottom': 0, 'maxHueBottom': 182, 'minSatBottom': 164, 'minCurvesBottom': 4, 'minHueBottom': 170, 'iteration1Bottom': 0, 'minValBottom': 95, 'maxValBottom': 130, 'epsilonBottom': 0, 'maxCurvesBottom': 4}
-Front={'minHueFront': 0, 'minValFront': 100, 'iteration1Front': 0, 'minSatFront': 79, 'epsilonFront': 0, 'minCurvesFront': 4, 'maxValFront': 146, 'maxCurvesFront': 4, 'maxHueFront': 11, 'operation1Front': 0, 'maxSatFront': 132}
-paramValueList={'buoyLED 1': 1, 'buoyTime 1': 15}
-missionList=('Buoy 1',)
-Buoy1Front={'minHueFront': 69, 'minValFront': 81, 'iteration1Front': 0, 'minSatFront': 25, 'epsilonFront': 0, 'minCurvesFront': 4, 'maxValFront': 122, 'maxCurvesFront': 4, 'maxHueFront': 95, 'operation1Front': 0, 'maxSatFront': 81}
-Buoy1Bottom={'maxSatBottom': 101, 'operation1Bottom': 0, 'maxHueBottom': 182, 'minSatBottom': 67, 'minCurvesBottom': 4, 'minHueBottom': 0, 'iteration1Bottom': 0, 'minValBottom': 72, 'maxValBottom': 98, 'epsilonBottom': 0, 'maxCurvesBottom': 4}
